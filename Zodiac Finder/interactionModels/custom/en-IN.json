@@ -1,0 +1,45 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "zodiac finder",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "BirthdayIntent",
+          "slots": [
+            {
+              "name": "dateofbirth",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "{dateofbirth}",
+            "my birth date is {dateofbirth}",
+            "my birthday is on {dateofbirth}"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "4"
+}
