@@ -1,0 +1,119 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "timmy junior",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RandomQuote",
+                    "slots": [],
+                    "samples": [
+                        "tell me a random quote",
+                        "tell me a quote",
+                        "give me a quote",
+                        "random quote"
+                    ]
+                },
+                {
+                    "name": "AuthorQuote",
+                    "slots": [
+                        {
+                            "name": "author",
+                            "type": "LIST_OF_AUTHORS"
+                        }
+                    ],
+                    "samples": [
+                        "get a quotation from {author}",
+                        "get a quote from {author}",
+                        "i need a quote from {author}",
+                        "what did {author} say",
+                        "tell me a quote from {author}"
+                    ]
+                },
+                {
+                    "name": "GetBookmarks",
+                    "slots": [],
+                    "samples": [
+                        "tell me my bookmarked places",
+                        "what are my bookmarked places",
+                        "what are my saved places",
+                        "tell me my favorite destinations",
+                        "my saved destinations"
+                    ]
+                },
+                {
+                    "name": "GetRoute",
+                    "slots": [
+                        {
+                            "name": "destination",
+                            "type": "AMAZON.PostalAddress"
+                        }
+                    ],
+                    "samples": [
+                        "how is the traffic",
+                        "how far is {destination}",
+                        "how much time will it take me to reach {destination}",
+                        "how does the traffic look like for {destination}",
+                        "the traffic time to {destination}",
+                        "the route to {destination}",
+                        "{destination}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_AUTHORS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Einstein"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Albert Einstein"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lincoln"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Abraham Lincoln"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
